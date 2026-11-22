@@ -52,7 +52,7 @@ object Slurp {
                 track.play()
                 Thread.sleep(buf.size * 1000L / sr + 150)
                 track.release()
-            } catch (_: Exception) { }
+            } catch (e: Exception) { }
         }.start()
     }
 }
